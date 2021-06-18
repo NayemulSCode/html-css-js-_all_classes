@@ -1,0 +1,44 @@
+.parentDiv{
+    display: grid;
+    /* grid-auto-flow: dense; */
+    /* align-items: flex-start; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    /* background-color: burlywood; */
+}
+.common-props{
+    height: 300px;
+    width: 300px;
+    box-shadow: 1px 1px 5px;
+    position: relative;
+}
+.common-props .content{
+    font-size: xx-large;
+    font-weight: 700;
+    color: gray;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    margin: -25px 0 0 -25px;
+}
+.first-card-1{
+    background-color: rgb(22, 89, 148);
+}
+.div-heder{
+    text-align: center;
+    top: 50%;
+    left: 40%;
+    margin: -25px 0 0 -25px;
+}
+@media (min-width: 417px) and (max-width: 617px) {
+    .parentDiv{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .common-props{
+        height: 250px;
+        width: 250px;
+        box-shadow: 1px 1px 5px;
+        position: relative;
+    }
+} 
